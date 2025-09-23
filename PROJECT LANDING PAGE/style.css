@@ -65,13 +65,20 @@ nav > a {
     text-decoration: none; 
 }
 
-nav > a:hover{
+.link1{
+  border-radius: 30px 60px;
+  color: var(--cor-4);
+  background-color:var(--cor-2);
+  text-decoration: underline;
+}
+
+.link2:hover, .link3:hover, .link4:hover{
   color: var(--cor-4);
   background-color:var(--cor-2);
   transition: all 0.5s  ease;
   scale: 1;
   padding: 4px;
-  border-radius: 3px;
+  border-radius: 30px 60px;
   transform: translateY(-5px);
   text-decoration: underline;
 }
@@ -113,7 +120,27 @@ font-family: "fonte-chique";
 }
 
 
+button{
+  font-family: "fonte-chique2";
+  font-size: 20px;
+  background-color: var(--cor-7);
+  border-radius: 30px 60px;
+  border: none;
+  padding: 7px;
+  width: 100px;
+  height: 40px;
+  border: 2px solid var(--cor-4);
+  color: var(--cor-2);
+  
+}
 
+button:hover{
+  transition: all 0.5s  ease;
+  scale: 1.1;
+  transform: translateY(-5px);
+  background-color: var(--cor-2);
+  color: var(--cor-6);
+}
 
 .conteudo{
   margin: 10px;
@@ -164,7 +191,7 @@ mark{
 .redes{
   background-color: var(--cor-2);
   border-radius: 40px;
-  padding: 2px;
+  padding: 5px;
   border: 2px solid var(--cor-8);
 
 }
