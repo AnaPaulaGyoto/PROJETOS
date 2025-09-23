@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+
+
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;          
+    margin: 0; 
+
+}
+
+
+
+
+.box {
+    border-radius: 2px;
+    margin: 100px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    transition: all 1s  ease
+    
+}
+
+.box:hover{
+    transform: rotate(135deg);
+    background-color: blue;
+    max-width: 100vh;
+    scale: 1;
+}

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family:"fonte-chique";
+    src: url(Josefin_Sans/static/JosefinSans-Light.ttf) format("truetype") ;
+}
+
+@font-face {
+    font-family:"fonte-chique2";
+    src: url(Josefin_Sans/static/JosefinSans-Regular.ttf) format("truetype") ;
+}

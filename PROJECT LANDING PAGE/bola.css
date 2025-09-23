@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.bola{
+    margin: 100px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--cor-8);
+    transition: all 1s  ease;
+   
+    
+}
+
+.bola:hover{
+    background-color: var(--cor-4);
+    scale: 4.8;
+    border-radius: 0px;
+    transform: rotate(135deg);
+}

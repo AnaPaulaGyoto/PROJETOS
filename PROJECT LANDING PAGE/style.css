@@ -1,14 +1,21 @@
 @charset "UTF-8";
 
+
+
 @font-face {
     font-family:"fonte-chique";
-    src: url("Seraphine\ DEMO\ VERSION.ttf") format("truetype") ;
+    src: url(Josefin_Sans/static/JosefinSans-Light.ttf) format("truetype") ;
 }
 
 @font-face {
-  font-family:"fontechique2";
-  src: url("BravenRegular.ttf") format("truetype");
+    font-family:"fonte-chique2";
+    src: url(Josefin_Sans/static/JosefinSans-Regular.ttf) format("truetype") ;
 }
+
+
+
+
+
 
 :root {
 --cor-1: rgb(230, 187, 243);
@@ -17,70 +24,83 @@
 --cor-4: #ca6eb3;
 --cor-5: rgba(224, 154, 241, 0.726); 
 --cor-6: #41085f;
---cor-7: #eb89cd;
+--cor-7: #fc9ee0;
 --cor-8: #96c989e7; 
+--cor-9: #ffffff;
  }
 
+
 body{
-  background-color: var(--cor-2);
+  background-color:var(--cor-2);
   text-align: center;
   margin: 0px;
+  
+  
 }
 
 header{
+font-family: "fonte-chique";
 font-size: 40px;
-font-family:"fontechique2";
-color: var(--cor-3);
-margin: 00px;
 padding: 10px;
 text-align: center;
-border-top: 5px solid var(--cor-1);
+
 }
 
 nav{
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  background-color: var(--cor-4);
-  text-align: center;
+  justify-content: right;
+  background-color: var(--cor-8);
   margin: 0px;
-  padding: -7px;
-  width: auto
+  padding: 0px;
+  width: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.274)
 }
 
 nav > a {
-    font-family: "fonte-chique";
-    color: var(--cor-1);
-    text-decoration: none; 
+    font-family: "fonte-chique2";
+    color: var(--cor-9);
     margin: 25px;
-    padding: 5px;   
+    padding: 5px;  
+    text-decoration: none; 
 }
 
 nav > a:hover{
-  text-decoration: none;
-  color: var(--cor-6);
-  background-color:var(--cor-1);
-  border-radius: 15px;  
-  transition-duration: 0.2s;
-  padding: 10px;
+  color: var(--cor-4);
+  background-color:var(--cor-2);
+  transition: all 0.5s  ease;
+  scale: 1;
+  padding: 4px;
+  border-radius: 3px;
+  transform: translateY(-5px);
+  text-decoration: underline;
 }
 
 .site{
-  font-family: "fontechique2";
+  font-family: "fonte-chique";
   font-size: 30px;
   color: var(--cor-1);
 
 }
 
 main{
-font-family:"fonte-chique";
-color: var(--cor-3);
+font-family: "fonte-chique";
+
+
 
 }
 
+.titulo {
+  font-size: 80px;
+  color: var(--cor-8);
+  
+}
+
 .texto{
-    font-family: "fontechique2";
     font-size: 20px;
+    color: var(--cor-4);
+    font-family: "fonte-chique";
+   
 }
 
  article{
@@ -92,73 +112,68 @@ color: var(--cor-3);
   max-width: 500px;
 }
 
-.titulo {
-  font-size: 80px;
-  
-}
 
 
-div > p{
-  padding: 6px;
-  text-align: justify;
-}    
 
 .conteudo{
   margin: 10px;
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: space-around;
-  flex-direction:row-reverse;
+  flex-wrap: wrap;
+  
+ 
 }
-
-
 
 
 .layout{
-    width: min(700px, 100%);
-    margin: 23px 10px;
+    width: min(500px, 100%);
+    margin: 40px 10px;
     columns: 3  ;
     column-gap: 1em;
+    flex-grow: 0.2;
     
     
 }
 
-img{
-    display: block;
+.layout > img{
+   
     margin-bottom: 1em;
     width: 100%;
     border-radius: 10%;
     border: 5px solid var(--cor-8);
+    transition: all 0.5s  ease;
+
 }
 
+.layout > img:hover{
+   border: 5px solid var(--cor-4);
+   transform: translateY(-10px);
 
-.conteudo2{
-  background-color: var(--cor-7);
-  display: flex;
-  justify-content: space-around;
-  height: 800px;
-  
-  
-  
 }
-
-
-.texto2{
-    font-family: "fontechique2";
-    font-size:25px;
-    padding-bottom: 8em;
-    padding: 170px;
-    margin-top: 0px;
-    
-     
-}    
+   
  
 mark{
   background-color: var(--cor-8);
   padding: 3.5px;
   border-radius: 10px;
   color: var(--cor-2);
-  
+}
+
+.redes{
+  background-color: var(--cor-2);
+  border-radius: 40px;
+  padding: 2px;
+  border: 2px solid var(--cor-8);
 
 }
 
+.redes:hover{
+  transition: all 0.5s  ease;
+  scale: 1.1;
+  transform: translateY(-5px);
+  border: 2px solid var(--cor-4);
+  
+ 
+}
