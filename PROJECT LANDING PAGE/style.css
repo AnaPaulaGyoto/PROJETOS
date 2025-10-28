@@ -9,7 +9,7 @@
 
 @font-face {
     font-family:"fonte-chique2";
-    src: url(Josefin_Sans/static/JosefinSans-Regular.ttf) format("truetype") ;
+    src: url(Cerotta\ Personal\ Use\ Only.ttf) format("truetype") ;
 }
 
 @media (max-width:1080px){
@@ -38,22 +38,37 @@
   }
 }
 
+@keyframes up{
+  0%{
+    transform: translateY(80px);
+  }
+
+
+  50%{
+    transform: translateY(-50px);
+    
+  }
+
+  100%{
+    transform: translateY(80px);
+  }
+}
 
 :root {
 --cor-1: rgb(230, 187, 243);
---cor-2: #eae2ee;
+--cor-2: #ffe2fd;
 --cor-3: rgb(0, 0, 0);
 --cor-4: #ca6eb3;
 --cor-5: rgba(224, 154, 241, 0.726); 
 --cor-6: #41085f;
---cor-7: #fc9ee0;
+--cor-7: #f196d6;
 --cor-8: #96c989e7; 
 --cor-9: #ffffff;
  }
 
 
 body{
-  background-color:var(--cor-2);
+  background-color: var(--cor-2);
   text-align: center;
   margin: 0px;
   height: 400px;
@@ -70,6 +85,7 @@ text-align: center;
 }
 
 nav{
+  font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: right;
@@ -81,10 +97,10 @@ nav{
 }
 
 nav > a {
-    font-family: "fonte-chique2";
+    font-family: "fonte-chique";
     color: var(--cor-9);
     margin: 25px;
-    padding: 5px;  
+    padding: 8px;  
     text-decoration: none; 
 }
 
@@ -100,7 +116,7 @@ nav > a {
   background-color:var(--cor-2);
   transition: all 0.5s  ease;
   scale: 1;
-  padding: 4px;
+  padding: 8px;
   border-radius: 30px 60px;
   transform: translateY(-5px);
   text-decoration: underline;
@@ -119,10 +135,10 @@ font-family: "fonte-chique";
 }
 .estrela{
   position: relative;
-  bottom: 415px;
+  bottom: 506px;
   right: 73px;
   z-index: -1;
-  animation:spin 6s ease-in-out 0s infinite ;
+  animation:spin 5.5s ease-in-out 0s infinite ;
   
 
   
@@ -131,13 +147,14 @@ font-family: "fonte-chique";
 }
 
 .titulo {
-  font-size: 80px;
+  font-family: "fonte-chique2";
+  font-size: 60px;
   color: var(--cor-8);
   
 }
 
 .texto{
-    font-size: 20px;
+    font-size: 25px;
     color: var(--cor-4);
     font-family: "fonte-chique";
    
@@ -147,18 +164,18 @@ font-family: "fonte-chique";
   margin: -16px;
   padding: 0px;
   text-align: justify;
-  font-size: 100%;
+  font-size: 300%;
   max-width: 500px;
 }
 
 
 button{
-  font-family: "fonte-chique2";
-  font-size: 20px;
+  font-family: "fonte-chique";
+  font-size: 25px;
   background-color: var(--cor-7);
   border-radius: 30px 60px;
   padding: 7px;
-  width: 100px;
+  width: 115px;
   height: 40px;
   border: 2px solid var(--cor-4);
   color: var(--cor-2);
@@ -186,31 +203,18 @@ button:hover{
 
 .layout{ 
     max-width: 600px;
-    margin: 40px 10px;
-    columns: 3;
-    column-gap: 1em;
-    flex-grow: 0.2;
-    margin: 88px;
-
+    animation:up 7s ease 0s infinite
     
     
 }
 
 .layout > img{
-   
     margin-bottom: 1em;
-    width: 100%;
-    border-radius: 10%;
-    border: 5px solid var(--cor-8);
-    transition: all 0.5s  ease;
+    width: 119%;
+    
 
 }
 
-.layout > img:hover{
-   border: 5px solid var(--cor-4);
-   transform: translateY(-10px);
-
-}
    
  
 mark{

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+
+
+
+@keyframes scroll{
+  0%{
+    transform: translateX(0deg);
+
+  }
+
+  100%{
+    transform: translateX(-50deg);
+  }
+
+}
+
+
+
+
+
+.carousel-container{
+width: 100%;
+  overflow: hidden;
+  background-color:  aquamarine;
+  margin-top: 150px;
+  display: flex;
+
+}
+
+.card{
+  flex: 0 0 auto;
+  width: 300px;
+  height: 200px;
+  background: rgb(60, 1, 60);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+.carousel-track{
+  display: flex;
+  width: max-content;
+  animation: scroll 10s linear infinite;
+}

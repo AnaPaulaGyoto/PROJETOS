@@ -18,6 +18,42 @@
   src: url("BravenRegular.ttf") format("truetype");
 }
 
+
+@keyframes carrosel{
+  0%{
+    transform: translateX(0);
+
+  }
+
+  100%{
+    transform: translateX(-50%);
+  }
+
+}
+
+@keyframes up-down{
+ 0%{
+    transform: translateX(20%);
+    opacity: 0;
+  }
+
+ 100%{
+    transform: translateX(0);
+    opacity: 1;
+ }
+
+}
+
+@keyframes opacity{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
 :root {
 --cor-1: rgb(230, 187, 243);
 --cor-2: #eae2ee;
@@ -54,7 +90,8 @@ nav > a {
     color: var(--cor-1);
     text-decoration: none; 
     margin: 25px;
-    padding: 10px;   
+    padding: 15px;
+       
 }
 
 nav > a:hover{
@@ -62,8 +99,9 @@ nav > a:hover{
   color: var(--cor-6);
   background-color:var(--cor-5);
   border-radius: 15px;  
-  transition-duration: 0.2s;
-  padding: 10px;
+  transition-duration: 0.1s;
+  padding: 15px;
+  animation: opacity 0.5s linear ;
 }
 
 .site{
@@ -75,52 +113,125 @@ nav > a:hover{
 }
 
 
-section{
+div{
  padding-top: 10vh;
  padding-bottom: 10vh;
  line-height: 2em;
  padding-left: 20px;
- font-size: 1vw;
+ font-size: 1.2vw;
 }
 
-section > p {
+ div > p {
   padding-bottom: 1em;
   padding: 20px;
   font-family: "fontechique2";
 }
 
 
-section.normal{
+div.normal{
   background-color: var(--cor-1);
   color: var(--cor-3);
-  height: 300px;
+  height: 600px;
   display: flex;
   justify-content: space-around;
+  margin: 10px;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
   
 }
 
-section > img{
+div > .gato{
   border-radius: 20px;
   padding: 10px;
   height: 500px;
-  
+  animation: up-down 1s linear normal;
   
 }
 
 
-section.normal2 > p{
+div.normal2 > p{
   
   width: 30%;
   
 }
 
-section.normal2  {
+div.normal2  {
   display: inline-block;
-  height: 800px;
+  height: 700px;
   padding: 10px;
   
 }
 
+.carousel-container{
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--cor-2);
+  padding: 10px 0;
+ 
+
+}
+
+ div > .hidden{
+  font-family: "fontechique2";
+  text-align: center;
+  font-size: 40px;
+ }
+
+
+ 
+
+.hidden{
+  opacity: 0;
+  transition: all 3s;
+  transform: translateY(-100%);
+}
+
+.show{
+  opacity: 1;
+  transform: translateY(5%);
+}
+
+.card{
+  flex: 0 0 auto;
+  width: 300px;
+  height: 200px;
+  background: rgb(60, 1, 60);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 20px;
+  margin: 0 10px;
+  
+}
+
+
+
+
+.card{
+  flex: 0 0 auto;
+  width: 300px;
+  height: 200px;
+  background: rgb(160, 81, 160);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+.carousel-track{
+  display: flex;
+  width: max-content;
+  animation: carrosel 20s linear infinite;
+}
+
+
+.carousel-container:hover .carousel-track{
+  animation-play-state: paused;
+}
 
 footer{
   background-color: var(--cor-6);

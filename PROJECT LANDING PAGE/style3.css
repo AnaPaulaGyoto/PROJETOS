@@ -13,7 +13,7 @@
 
 :root {
 --cor-1: rgb(230, 187, 243);
---cor-2: #eae2ee;
+--cor-2:  #ffe2fd;
 --cor-3: rgb(0, 0, 0);
 --cor-4: #ca6eb3;
 --cor-5: rgba(224, 154, 241, 0.726); 
@@ -41,6 +41,7 @@ text-align: center;
 }
 
 nav{
+  font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: right;
@@ -52,10 +53,10 @@ nav{
 }
 
 nav > a {
-    font-family: "fonte-chique2";
+    font-family: "fonte-chique";
     color: var(--cor-9);
     margin: 25px;
-    padding: 5px;  
+    padding: 8px;  
     text-decoration: none; 
 }
 
@@ -73,7 +74,7 @@ nav > a {
   background-color:var(--cor-2);
   transition: all 0.5s  ease;
   scale: 1;
-  padding: 4px;
+  padding: 8px;
   border-radius: 30px 60px;
   transform: translateY(-5px);
   text-decoration: underline;

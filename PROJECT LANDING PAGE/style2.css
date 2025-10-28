@@ -8,20 +8,21 @@
 
 @font-face {
     font-family:"fonte-chique2";
-    src: url(Josefin_Sans/static/JosefinSans-Regular.ttf) format("truetype") ;
+    src: url(Cerotta\ Personal\ Use\ Only.ttf) format("truetype") ;
 }
 
 @keyframes spin{
    0%{
-    transform: scale(1)
-  }
+    transform: translateX(-50vw) rotate(360deg)
+   }
 
-
+   50%{
+    transform: translateX(0vw) 
+   }
    
-  100%{
-    transform: scale(1.2)
-  }
-  
+   100%{
+    transform: translateX(0vw);
+   }
   }
   
 
@@ -30,12 +31,12 @@
 
 :root {
 --cor-1: rgb(230, 187, 243);
---cor-2: #eae2ee;
+--cor-2: #ffe2fd;
 --cor-3: rgb(0, 0, 0);
 --cor-4: #ca6eb3;
 --cor-5: rgba(224, 154, 241, 0.726); 
 --cor-6: #41085f;
---cor-7: #fc9ee0;
+--cor-7: #f196d6;
 --cor-8: #96c989e7; 
 --cor-9: #ffffff;
  }
@@ -58,6 +59,7 @@ text-align: center;
 }
 
 nav{
+  font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: right;
@@ -69,10 +71,10 @@ nav{
 }
 
 nav > a {
-    font-family: "fonte-chique2";
+    font-family: "fonte-chique";
     color: var(--cor-9);
     margin: 25px;
-    padding: 5px;  
+    padding: 8px;  
     text-decoration: none; 
 }
 
@@ -90,7 +92,7 @@ nav > a {
   background-color:var(--cor-2);
   transition: all 0.5s  ease;
   scale: 1;
-  padding: 4px;
+  padding: 8px;
   border-radius: 30px 60px;
   transform: translateY(-5px);
   text-decoration: underline;
@@ -99,7 +101,7 @@ nav > a {
 .eu{
   position: relative;
   top: 20px;
-  animation:spin 2s ease 0s normal forwards ; 
+  animation:spin 12s ease 0s normal ; 
   
   
 }
