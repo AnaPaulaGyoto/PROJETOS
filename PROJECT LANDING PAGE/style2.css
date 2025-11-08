@@ -75,7 +75,7 @@ nav > a {
     color: var(--cor-9);
     margin: 25px;
     padding: 8px;  
-    text-decoration: none; 
+    
 }
 
 
@@ -84,7 +84,8 @@ nav > a {
   border-radius: 30px 60px;
   color: var(--cor-4);
   background-color:var(--cor-2);
-  text-decoration: underline;
+  text-decoration: none;
+  
 }
 
 .link2:hover, .link3:hover, .link1:hover{
@@ -95,16 +96,13 @@ nav > a {
   padding: 8px;
   border-radius: 30px 60px;
   transform: translateY(-5px);
-  text-decoration: underline;
+ 
 }
 
-.eu{
-  position: relative;
-  top: 20px;
-  animation:spin 12s ease 0s normal ; 
+ 
   
   
-}
+
 
  article > .titulo{
   color: var(--cor-8);

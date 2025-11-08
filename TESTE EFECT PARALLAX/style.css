@@ -54,6 +54,20 @@
   }
 }
 
+@keyframes change{
+  0%{
+    transform: rotate(160deg);
+    
+
+  }
+
+  100%{
+    
+
+  
+  }
+}
+
 :root {
 --cor-1: rgb(230, 187, 243);
 --cor-2: #eae2ee;
@@ -67,6 +81,7 @@
 *{
   padding: 0px;
   margin: 0px;
+  
 }
 
 html, body{
@@ -99,9 +114,9 @@ nav > a:hover{
   color: var(--cor-6);
   background-color:var(--cor-5);
   border-radius: 15px;  
-  transition-duration: 0.1s;
+  transition-duration: 0.3s;
   padding: 15px;
-  animation: opacity 0.5s linear ;
+  animation: opacity 0.4s linear ;
 }
 
 .site{
@@ -113,55 +128,69 @@ nav > a:hover{
 }
 
 
-div{
+div {
  padding-top: 10vh;
  padding-bottom: 10vh;
  line-height: 2em;
  padding-left: 20px;
- font-size: 1.2vw;
+ 
 }
 
  div > p {
   padding-bottom: 1em;
-  padding: 20px;
+  padding: 70px;
   font-family: "fontechique2";
+  font-size: 30px;
+  text-align: center;
 }
 
 
-div.normal{
+div.section1{
   background-color: var(--cor-1);
   color: var(--cor-3);
-  height: 600px;
+  height: 700px;
   display: flex;
-  justify-content: space-around;
-  margin: 10px;
-  flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: first baseline;
+  flex-direction: column;
   flex-wrap: wrap;
   
+  
 }
 
-div > .gato{
-  border-radius: 20px;
-  padding: 10px;
-  height: 500px;
-  animation: up-down 1s linear normal;
+article{
+  font-family: "fontechique2";
+  justify-content: right;
+  margin: 0px;
+  padding: 150px;
+  text-align: justify;
+  font-size: 27px;
+  box-sizing: border-box;
   
 }
 
 
-div.normal2 > p{
+
+
+div.section2 > p{
   
-  width: 30%;
+  width: 40%;
   
 }
 
-div.normal2  {
-  display: inline-block;
-  height: 700px;
-  padding: 10px;
-  
+div.section2  {
+  background-color: var(--cor-1);
+  display: flex;
+  padding: 95px;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-start;
+ 
 }
+
+
+
+
 
 .carousel-container{
   width: 100%;
@@ -183,7 +212,7 @@ div.normal2  {
 
 .hidden{
   opacity: 0;
-  transition: all 3s;
+  transition: ease-in-out 2s;
   transform: translateY(-100%);
 }
 
@@ -191,6 +220,7 @@ div.normal2  {
   opacity: 1;
   transform: translateY(5%);
 }
+
 
 .card{
   flex: 0 0 auto;
@@ -204,23 +234,11 @@ div.normal2  {
   border-radius: 20px;
   margin: 0 10px;
   
+  
 }
 
 
 
-
-.card{
-  flex: 0 0 auto;
-  width: 300px;
-  height: 200px;
-  background: rgb(160, 81, 160);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  border-radius: 20px;
-  margin: 0 10px;
-}
 
 .carousel-track{
   display: flex;
