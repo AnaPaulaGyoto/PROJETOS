@@ -69,12 +69,12 @@
 }
 
 :root {
---cor-1: rgb(230, 187, 243);
---cor-2: #eae2ee;
---cor-3: rgb(0, 0, 0);
---cor-4: #8b5fa3;
---cor-5: rgba(224, 154, 241, 0.726); 
---cor-6: #41085f;
+--cor-1: #e9c1ba;;
+--cor-2: #e9c1ba;
+--cor-3: #291919;
+--cor-4: #66192f;
+--cor-5: #c44662; 
+--cor-6: #ba7751;
 
 }
 
@@ -93,7 +93,7 @@ nav{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: var(--cor-4);
+  background-color: rgba(104, 21, 104, 0.178);
   text-align: center;
   margin: 0px;
   padding: -7px;
@@ -102,7 +102,7 @@ nav{
 
 nav > a {
     font-family: "fonte-chique";
-    color: var(--cor-1);
+    color: var(--cor-3);
     text-decoration: none; 
     margin: 25px;
     padding: 15px;
@@ -111,21 +111,13 @@ nav > a {
 
 nav > a:hover{
   text-decoration: none;
-  color: var(--cor-6);
-  background-color:var(--cor-5);
-  border-radius: 15px;  
+  color: var(--cor-5); 
   transition-duration: 0.3s;
   padding: 15px;
   animation: opacity 0.4s linear ;
 }
 
-.site{
-  font-family: "fontechique2";
-  font-size: 30px;
-  color: var(--cor-1);
-  margin: 25px;
-  padding: 10px; 
-}
+
 
 
 div {
@@ -172,6 +164,18 @@ article{
 
 
 
+
+.fraseprincipal{
+   font-family: "fontechique2";
+  justify-content: right;
+  margin: 0px;
+  padding: 150px;
+  text-align: justify;
+  font-size: 55px;
+  box-sizing: border-box;
+}
+
+
 div.section2 > p{
   
   width: 40%;
@@ -196,7 +200,7 @@ div.section2  {
   width: 100%;
   overflow: hidden;
   background-color: var(--cor-2);
-  padding: 10px 0;
+
  
 
 }
@@ -224,9 +228,9 @@ div.section2  {
 
 .card{
   flex: 0 0 auto;
-  width: 300px;
+  width: 400px;
   height: 200px;
-  background: rgb(60, 1, 60);
+  background: var(--cor-4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -243,7 +247,7 @@ div.section2  {
 .carousel-track{
   display: flex;
   width: max-content;
-  animation: carrosel 20s linear infinite;
+  animation: carrosel 30s linear infinite;
 }
 
 
@@ -256,6 +260,6 @@ footer{
   color: var(--cor-4);
   text-align: center;
   height: 40px;
-  padding-top: 20px;
+
 }
 
